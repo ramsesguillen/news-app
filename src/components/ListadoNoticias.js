@@ -2,6 +2,8 @@ import React from 'react'
 import { Noticia } from './Noticia'
 
 export const ListadoNoticias = ({ noticias }) => {
+
+    if ( !noticias ) return null;
     return (
         <div className="row">
             {
